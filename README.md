@@ -1,19 +1,17 @@
 # react-profile
 
-## 실행 방법
+## COMPONENT
 
-```
-npm install
-npm run start
-```
+- Card : 프로필 정보를 담고 있는 컴포넌트
 
-- npm install : 필요한 모든 패키지를 설치합니다. 처음 1번만 실행하면 됩니다.
-- npm run start : react 어플리케이션을 브라우저에서 실행합니다.
+## PROPS
 
-## 미션 설명
+1.Card의 props
+- name : 이름을 담는 props
+- desc[] : 설명을 라인별로 저장해놓은 props
+- likeAnimal[] : 좋아하는 동물리스트를 저장해놓은 props
 
-[미션 설명](./docs/mission-description/README.md)
+## STATE
 
-## 미션 제출 방법
-
-[미션 제출 방법](./docs/how-to-submit/README.md)
+- card : 한 사람의 name, desc[]를 담는 state
+- animal[] : 한 사람의 좋아하는 동물리스트를 담는 state

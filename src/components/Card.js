@@ -13,7 +13,6 @@ class Card extends Component {
     return (
         <div className="card">
             <h1>{this.props.name}</h1>
-            while(i)
             {this.props.desc[0]}<br/>
             {this.props.desc[1]}<br/>
             {this.props.desc[2]}<br/>
