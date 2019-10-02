@@ -17,12 +17,12 @@ const Wrapper = styled.div`
 `;
 
 class ProfileCard extends Component {
-  getAnimalList() {
+  getAnimalList = () => {
     const animalList = this.props.profile.animalList.map(value => {
       return <li>{value}</li>;
     });
     return animalList;
-  }
+  };
   render() {
     return (
       <Wrapper>
