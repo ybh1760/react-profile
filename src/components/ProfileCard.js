@@ -18,10 +18,9 @@ const Wrapper = styled.div`
 
 class ProfileCard extends Component {
   getAnimalList = () => {
-    const animalList = this.props.profile.animalList.map(value => {
+    return this.props.profile.animalList.map(value => {
       return <li>{value}</li>;
     });
-    return animalList;
   };
   render() {
     return (
