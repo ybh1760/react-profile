@@ -25,21 +25,19 @@ class ProfileCard extends Component {
   render() {
     return (
       <Wrapper>
-        <div className="profileCard">
-          <NameWrapper>{this.props.profile.name}</NameWrapper>
-          <P>
-            {`안녕하세요 저는 ${this.props.profile.univ}대학교의 ${this.props.profile.major}에 다니고 있습니다.`}
-          </P>
-          <P>
-            {`올해는 ${this.props.profile.age}살인데 내년엔 ${this.props.profile
-              .age + 1}이에요`}
-          </P>
-          <P>{`지금 기분은 ${
-            this.props.profile.isHappy ? "행복" : "불행"
-          }해요!`}</P>
-          <h2>좋아하는 동물</h2>
-          <ul>{this.getAnimalList()}</ul>
-        </div>
+        <NameWrapper>{this.props.profile.name}</NameWrapper>
+        <P>
+          {`안녕하세요 저는 ${this.props.profile.univ}대학교의 ${this.props.profile.major}에 다니고 있습니다.`}
+        </P>
+        <P>
+          {`올해는 ${this.props.profile.age}살인데 내년엔 ${this.props.profile
+            .age + 1}이에요`}
+        </P>
+        <P>{`지금 기분은 ${
+          this.props.profile.isHappy ? "행복" : "불행"
+        }해요!`}</P>
+        <h2>좋아하는 동물</h2>
+        <ul>{this.getAnimalList()}</ul>
       </Wrapper>
     );
   }
